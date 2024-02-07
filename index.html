@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance DashBoard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="title">
+            <header>
+                Personal Finance DashBoard
+            </header>
+        </div>
+        <div class="notice">
+          <div>
+            <h5>Total Balance</h5>
+                <span id="balance"> 0.00</span>
+          </div>
+          <div>
+            <h6>Income</h6>
+            <span id="income"> 0.00</span>
+          </div>
+          <div>
+            <h6>Expense</h6>
+            <span id="expense"> 0.00</span>
+          </div>
+        </div>
+
+        <div class="user">
+            <button class="green" id="green">Income</button>
+            <button class="red" id="red">Expense</button>
+        </div>
+       
+        <div class="matter">
+            <form class="form">
+                <h1 style="color: #fff;">Take down</h1>
+                Amount (in &#8377 )
+                <input type="number" class="amount" min="1" value="">
+                <div class="desp">
+                <!-- <input type="text"  placeholder="Description" id="despcription"> -->
+
+                <button type="submit">Done</button>
+                </div>
+            </form>
+        </div>
+<hr>
+<div id="descriptionOutput"></div>
+<div id="history"></div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
